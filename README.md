@@ -31,7 +31,32 @@ git clone https://github.com/swarmcity/SwarmCityChain.git
 ```
 cd SwarmCityChain
 docker-compose up -d
-````
+```
+
+#### Initialize foreground
+
+```
+docker-compose up
+```
+
+#### Stop
+
+```
+docker-compose down
+```
+
+#### Status
+```
+# docker-compose ps
+        Name                      Command               State                                               Ports                                              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+SwarmCityChainParity   /parity/parity --config /r ...   Up      0.0.0.0:8080->8080/tcp, 0.0.0.0:8180->8180/tcp, 0.0.0.0:8545->8545/tcp, 0.0.0.0:8546->8546/tcp 
+```
+
+#### Logs
+```
+docker-compose logs -f
+```
 
 ### Configuration
 
@@ -51,7 +76,7 @@ More info about setting up parity:
 
 #### Docker-compose
 
-Pesistent data stored on `./data`. 
+Pesistent data stored on `./data`
 * keys
 * parity_chain
 * parity_basepath
