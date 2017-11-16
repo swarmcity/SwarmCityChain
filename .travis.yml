@@ -1,0 +1,15 @@
+# Use Ubuntu 'trusty' distribution
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+install:
+  - docker-compose up --build -d
+
+script:
+  - docker ps --filter "name=SwarmCityChainParity"
+
+after_script:
+  - docker-compose down
