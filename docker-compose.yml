@@ -19,6 +19,7 @@ services:
             # Parity data
             - ./data/parity_basepath:/root/.local/share/io.parity.ethereum
         command: 
-             --config /root/config/config.toml
+             #--config /root/config/config.toml
+             --db-path "/root/chain" --keys-path "/root/keys" --port 31313 --jsonrpc-port 8545 --jsonrpc-interface all --jsonrpc-hosts all --jsonrpc-cors '*' --ws-interface 0.0.0.0 --ws-port 8546 --ws-origins '*' --ws-hosts all --cache-size 1024  --no-dapps --ui-interface "0.0.0.0" --ui-hosts all --ui-no-validation --ipc-path "$HOME/.local/share/io.parity.ethereum/jsonrpc.ipc"
         restart: on-failure
 
