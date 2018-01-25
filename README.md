@@ -61,23 +61,7 @@ docker-compose logs -f
 
 ### Configuration
 
-#### Parity
-
-Parity configuration file
-
-`
-conf/config.toml
-`
-
-More info about setting up parity:
-
-[wiki](https://github.com/paritytech/parity/wiki/Configuring-Parity)
-
-[parity-config-generator](https://paritytech.github.io/parity-config-generator/)
 
 #### Docker-compose
 
 Pesistent data stored on `./data`
-* keys
-* parity_chain
-* parity_basepath

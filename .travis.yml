@@ -9,7 +9,7 @@ install:
   - docker-compose up --build -d
 
 script:
-  - docker ps --filter "name=SwarmCityChainParity"
+  - docker ps --filter "name=SwarmCityChainGeth"
 
 after_script:
   - docker-compose down
