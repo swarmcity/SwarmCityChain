@@ -2,8 +2,11 @@
 
 [![Build Status](https://travis-ci.org/swarmcity/SwarmCityChain.svg?branch=master)](https://travis-ci.org/swarmcity/SwarmCityChain)
 
-# Swarm City
-### SwarmCityChain
+# Swarm City Chain
+
+## Introduction
+
+The Chain is the latest Parity node, fully synchronized to the Ethereum blockchain
 
 ## Install dependencies
 
